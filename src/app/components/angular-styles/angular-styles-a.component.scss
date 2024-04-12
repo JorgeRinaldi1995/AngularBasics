@@ -1,0 +1,53 @@
+/* 
+    Seletores especiais
+
+    :host:  é um seletor especial que se refere ao componente que esta
+    sendo usado.
+
+    É usado para aplicar estilos diretamente ao componente em si,
+    em vez de seus elementos filhos.
+
+    É possivel definir estilos específicos para o componente raíz.
+
+    No exemplo abaixo, a hierarquia que manda é que esta dentro de :host
+*/
+
+h3{
+    background-color: rgb(144, 248, 213);
+}
+
+:host{
+    h3{
+        background-color: rgb(188, 133, 243);
+    }
+}
+
+h3{
+    background-color: rgb(235, 137, 137);
+}
+
+/* 
+    :host-context(): é um seletor que permite aplicar estilos com base
+    no contexto do componente pai.
+
+    É util quando é necessario aplicar estilos com base em condições
+    no componente pai.
+
+    Por exemplo, você pode alterar a cor de fundo de um componente filho
+    com base em um valor definido em seu componente pai.
+*/
+
+:host-context(.theme-dark){ // classe dentro do seletor deve ser a div ou componente pai
+    h4{
+        background-color: #474747;
+        color: #fff;
+    }
+}
+
+/*
+  ::ng-deep:  Estrapola o escopo hierarquico do componente, evite o uso desse seletor
+*/
+
+::ng-deep{
+
+}

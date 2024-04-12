@@ -1,27 +1,33 @@
-# AngularBasics
+# Angular Basics
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+Esse projeto foi criado com o intuito de estudar os coneceitos basicos de Angular
 
-## Development server
+## Sobre Components
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Um componente é uma unidade de código responsável por uma única tarefa ou funcionalidade. Ele é composto por três partes principais:
 
-## Code scaffolding
+* **Template**: É o código HTML que define a interface visual do componente.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* **Estilo**: É o código CSS que define o estilo visual do componente.
 
-## Build
+* **Classe**: É a classe JavaScript que define a lógica de funcionamento do componente.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Os componentes são usados para organizar e modularizar o código Angular. Eles permitem que você desenvolva aplicações mais complexas e escaláveis, mantendo o código organizado e fácil de manter.
 
-## Running unit tests
+Aqui estão alguns dos benefícios de usar componentes no Angular:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* **Reutilização**: Os componentes podem ser reutilizados em diferentes partes da aplicação. Isso ajuda a reduzir a duplicação de código e a melhorar a produtividade.
 
-## Running end-to-end tests
+* **Testabilidade**: Os componentes podem ser testados de forma independente, o que ajuda a garantir a qualidade do código.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* **Organização**: Os componentes ajudam a organizar o código Angular, tornando-o mais fácil de entender e manter.
 
-## Further help
+Alguns exemplos de componentes Angular são:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* **Componentes de formulário**: São usados para criar formulários para coletar dados do usuário.
+
+* **Componentes de listagem**: São usados para exibir uma lista de itens.
+
+* **Componentes de navegação**: São usados para controlar a navegação entre diferentes páginas da aplicação.
+
+Os componentes são uma ferramenta fundamental para o desenvolvimento de aplicações Angular. Eles permitem que você desenvolva aplicações mais complexas e escaláveis, mantendo o código organizado e fácil de manter.
