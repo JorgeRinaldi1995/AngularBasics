@@ -1,0 +1,13 @@
+<h2>Template</h2>
+<h3>Text Interpolation</h3>
+
+<img [src]="imgSrc" [alt]="name" [title]="name"/>
+<p>Nome do caboclo: {{ name }}</p>
+<p>Quantos drauziovarela fuma por dia: {{ howManyJointsTheySmoke(10, 4) }}</p>
+<p>Quantos bic ele ja guentou: {{ lightersHeStolen }} - {{ howMany }}</p>
+
+<h3>Property binding</h3>
+<!--<element [property]='value'></element>-->
+<button [disabled]="isDisabled">Devolver os bic</button>
+
+<h3>Attribute binding</h3>
