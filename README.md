@@ -31,3 +31,13 @@ Alguns exemplos de componentes Angular são:
 * **Componentes de navegação**: São usados para controlar a navegação entre diferentes páginas da aplicação.
 
 Os componentes são uma ferramenta fundamental para o desenvolvimento de aplicações Angular. Eles permitem que você desenvolva aplicações mais complexas e escaláveis, mantendo o código organizado e fácil de manter.
+
+## Sobre Seletores Especiais
+
+O Anguler possui 3 seletores especiais que auxiliam na hieraquia, escopo e especificação de estilos. São eles:
+
+* **:host**: É um seletor especial que se refere ao componente que esta sendo usado. É usado para aplicar estilos diretamente ao componente em si, em vez de seus elementos filhos. É possivel definir estilos específicos para o componente raíz.
+
+* **:host-context()**: É um seletor que permite aplicar estilos com base no contexto do componente pai. É util quando é necessario aplicar estilos com base em condições no componente pai. Por exemplo, você pode alterar a cor de fundo de um componente filho com base em um valor definido em seu componente pai.
+
+* **::ng-deep**: É um seletor que estrapola o escopo hierarquico do componente, evite o uso desse seletor.

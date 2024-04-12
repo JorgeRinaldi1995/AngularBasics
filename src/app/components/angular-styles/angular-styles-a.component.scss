@@ -12,18 +12,27 @@
     No exemplo abaixo, a hierarquia que manda é que esta dentro de :host
 */
 
+@mixin base{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 4px;
+}
+
 h3{
     background-color: rgb(144, 248, 213);
+    @include base
 }
 
 :host{
     h3{
         background-color: rgb(188, 133, 243);
+        @include base
     }
 }
 
 h3{
     background-color: rgb(235, 137, 137);
+    @include base
 }
 
 /* 
@@ -41,6 +50,7 @@ h3{
     h4{
         background-color: #474747;
         color: #fff;
+        @include base
     }
 }
 
