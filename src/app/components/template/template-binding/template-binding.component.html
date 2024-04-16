@@ -4,10 +4,43 @@
 <img [src]="imgSrc" [alt]="name" [title]="name"/>
 <p>Nome do caboclo: {{ name }}</p>
 <p>Quantos drauziovarela fuma por dia: {{ howManyJointsTheySmoke(10, 4) }}</p>
-<p>Quantos bic ele ja guentou: {{ lightersHeStolen }} - {{ howMany }}</p>
+<p>Quantos bic ele ja guentou: {{ lightersHeStolen }}</p>
 
 <h3>Property binding</h3>
 <!--<element [property]='value'></element>-->
 <button [disabled]="isDisabled">Devolver os bic</button>
 
 <h3>Attribute binding</h3>
+<!--<element [attr.attribute-you-are-targeting]='value'></element>-->
+<p [attr.title]="name" [attr.aria-label]="name">{{ name }} passa a doze</p>
+
+<h3>Class & Style binding</h3>
+
+<p [class.background-green]="lightersHeStolen <= 0" [class.background-red]="lightersHeStolen > 0">Fama na roda: {{ howMany }}</p>
+
+<h3>Event binding</h3>
+
+<!--
+    <element(TargetEventName)='TemplateStatement'></element>
+-->
+<p>Quantos bic o vagabundo meteu a mão</p>
+
+<button (click)="sum()">+</button>
+<button (click)="sub()">-</button>
+
+<!-- <input (keydown.shift.t)="onKeyDown($event)" /> -->
+
+<div class="mouse-event" (mousemove)="onMouseMove($event)">
+</div>
+
+<h3>Two-way binding</h3>
+
+<input [(ngModel)]="lightersHeStolen" />
+
+{{ lightersHeStolen }} 
+
+<h2>Recursos Legados</h2>
+
+<h3>NgClass & NgStyle</h3>
+
+<div [ngClass]="{ 'background-red': false }">Classes condicionais. (mesma coisa que o Class & Style binding)</div>
